@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Video Recommendation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+</head>
+<body>
+ <div>
+     <a href="{{ url_for('about')}}">
+         <button class="about">ABOUT</button>
+     </a>
+     <h1 class="head"><u>Sports Video Recommendtion</u></h1>
+     <!-- Main Input For Receiving Query to our ML -->
+    <div style="text-align: center;">
+        <div>
+            <form action="{{ url_for('results')}}" method="post">
+
+                <input type="text" name="search" placeholder="Search..." required="required"/><br><br>
+                <button class="icon"><i class="fa fa-search"></i></button>
+
+            </form>
+        </div>
+     </div>
+ </div>
+</body>
+</html>

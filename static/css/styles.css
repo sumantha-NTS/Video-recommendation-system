@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) fixed;
+
+    height: 100%;
+}
+.head {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding-top: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.head1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h4 {
+    font-size: 15px;
+}
+input[type="text"] {
+    font-family:courier;
+    height: 30px;
+    width: 450px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align:center;
+}
+input[type="text"]::placeholder {
+    font-weight: lighter;
+    text-align: center;
+}
+.about {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    margin: 20px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer;
+    right: -2px;
+    top: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.about:hover {
+    color: green;
+    background-color: white;
+}
+.copy {
+    padding-top: 300px;
+    text-align: center;
+}
+.icon {
+    background-color: #fff;
+    padding: 7px 18px;
+    position: absolute;
+    cursor: pointer;
+    right: 455px;
+    top: 140px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #000;
+}
+.icon:hover {
+    color: blue;
+    background-color: #F0E68C;
+}
+.y_image {
+    margin-left: 150px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    border: 2px solid #FEDE00;
+}
+.img {
+    width: 450px;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.main {
+    float: left;
+    text-align: left;
+    width: 750px;
+}
