@@ -14,24 +14,28 @@
      <!-- Main Input For Receiving Query to our ML -->
      <div>
         {% if x[0] == 'Not Found' %}
-         <div style='color:red; text-align: center;'>
-             <h2 >Not Found</h2>
+         <div style='color: red; text-align: center; font-size: 25px'>
+            <h2>Not Found</h2>
          </div>
         {% else %}
         <h3 style="text-align: center;"><u><i>Search results:</i></u></h3>
          <div class="container">
              <div class="row">
                  <div class="img">
-                     <img src="{{x[1].iloc[0,11]}}" class="y_image">
+                     <iframe 
+                        src={{x[1].iloc[0,13]}} allowfullscreen class="y_image">                       
+                     </iframe>
                  </div>
              </div>
              <div class="row">
                  <div class="main">
                      <ul>
                         <li>
-                            <h4>Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[0,0]}}</a></h4>
+                            <h4 class="over1">Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[0,0]}}</a></h4>
+                            <h4 class="over1">Description : {{x[1].iloc[0,1]}}</h4>
                             <h4>Published Date : {{x[1].iloc[0,2]}}</h4>
                             <h4>Channel Name : {{x[1].iloc[0,3]}}</h4>
+                            <h4>Subscribers : {{x[1].iloc[0,4]}}</h4>
                             <h4>Views : {{x[1].iloc[0,6]}}</h4>
                             <h4>Likes : {{x[1].iloc[0,7]}}</h4>
                             <h4>Dislikes : {{x[1].iloc[0,8]}}</h4>
@@ -40,72 +44,89 @@
                  </div>
              </div>
          </div>
-
+        <h3 style="text-align: center; font-size: 30px;"><u><i>Recommendations:</i></u></h3>
          <div class="container">
              <div class="row">
-                 <div class="img">
-                     <img src="{{x[1].iloc[1,11]}}" class="y_image">
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="main">
+                 <div class="recom">
                      <ul>
-                        <li>
-                            <h4>Title :<a href={{x[1].iloc[1,10]}}> {{x[1].iloc[1,0]}}</a></h4>
-                            <h4>Published Date : {{x[1].iloc[1,2]}}</h4>
-                            <h4>Channel Name : {{x[1].iloc[1,3]}}</h4>
-                            <h4>Views : {{x[1].iloc[1,6]}}</h4>
-                            <h4>Likes : {{x[1].iloc[1,7]}}</h4>
-                            <h4>Dislikes : {{x[1].iloc[1,8]}}</h4>
-                        </li>
-                    </ul>
-                 </div>
-             </div>
-         </div>
+                         <li>
+                            <iframe 
+                                src={{x[1].iloc[1,13]}} allowfullscreen class="y_image1">                       
+                            </iframe><br>
+                         </li>
+                         <li>
+                            <h5 class="over">Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[1,0]}}</a></h5>
+                            <h5>Views : {{x[1].iloc[1,6]}}</h5>
+                            <h5>Likes : {{x[1].iloc[1,7]}}</h5>
+                            <h5>Dislikes : {{x[1].iloc[1,8]}}</h5>
+                         </li>
+                     </ul>
 
-         <div class="container">
-             <div class="row">
-                 <div class="img">
-                     <img src="{{x[1].iloc[2,11]}}" class="y_image">
                  </div>
-             </div>
-             <div class="row">
-                 <div class="main">
-                     <ul>
-                        <li>
-                            <h4>Title :<a href={{x[1].iloc[2,10]}}> {{x[1].iloc[2,0]}}</a></h4>
-                            <h4>Published Date : {{x[1].iloc[2,2]}}</h4>
-                            <h4>Channel Name : {{x[1].iloc[2,3]}}</h4>
-                            <h4>Views : {{x[1].iloc[2,6]}}</h4>
-                            <h4>Likes : {{x[1].iloc[2,7]}}</h4>
-                            <h4>Dislikes : {{x[1].iloc[2,8]}}</h4>
-                        </li>
-                    </ul>
-                 </div>
-             </div>
-         </div>
 
-         <div class="container">
-             <div class="row">
-                 <div class="img">
-                     <img src="{{x[1].iloc[3,11]}}" class="y_image">
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="main">
-                     <ul>
-                        <li>
-                            <h4>Title :<a href={{x[1].iloc[3,10]}}> {{x[1].iloc[3,0]}}</a></h4>
-                            <h4>Published Date : {{x[1].iloc[3,2]}}</h4>
-                            <h4>Channel Name : {{x[1].iloc[3,3]}}</h4>
-                            <h4>Views : {{x[1].iloc[3,6]}}</h4>
-                            <h4>Likes : {{x[1].iloc[3,7]}}</h4>
-                            <h4>Dislikes : {{x[1].iloc[3,8]}}</h4>
-                        </li>
-                    </ul>
-                 </div>
              </div>
          </div>
+         <div class="container">
+            <div class="row">
+                <div class="recom">
+                    <ul>
+                        <li>
+                            <iframe 
+                                src={{x[1].iloc[2,13]}} allowfullscreen class="y_image1">                       
+                            </iframe>
+                        </li>
+                        <li>
+                            <h5 class="over">Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[2,0]}}</a></h5>
+                            <h5>Views : {{x[1].iloc[2,6]}}</h5>
+                            <h5>Likes : {{x[1].iloc[2,7]}}</h5>
+                            <h5>Dislikes : {{x[1].iloc[2,8]}}</h5>                            
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <div class="recom">
+                    <ul>
+                        <li>
+                            <iframe 
+                                src={{x[1].iloc[3,13]}} allowfullscreen class="y_image1">                       
+                            </iframe>
+                        </li>
+                        <li>
+                            <h5 class="over">Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[3,0]}}</a></h5>
+                            <h5>Views : {{x[1].iloc[3,6]}}</h5>
+                            <h5>Likes : {{x[1].iloc[3,7]}}</h5>
+                            <h5>Dislikes : {{x[1].iloc[3,8]}}</h5>  
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <div class="recom">
+                    <ul>
+                        <li>
+                            <iframe 
+                                src={{x[1].iloc[4,13]}} allowfullscreen class="y_image1">                       
+                            </iframe>
+                        </li>
+                        <li>
+                            <h5 class="over">Title :<a href={{x[1].iloc[0,10]}}> {{x[1].iloc[4,0]}}</a></h5>
+                            <h5>Views : {{x[1].iloc[4,6]}}</h5>
+                            <h5>Likes : {{x[1].iloc[4,7]}}</h5>
+                            <h5>Dislikes : {{x[1].iloc[4,8]}}</h5>                             
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div> 
+
 
         {% endif %}
      </div>

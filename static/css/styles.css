@@ -1,13 +1,12 @@
 body {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%) fixed;
-
     height: 100%;
 }
 .head {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 40px;
     letter-spacing: 1px;
-    padding-top: 40px;
+    padding-top: 20px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -19,7 +18,29 @@ body {
     text-align: center;
 }
 h4 {
+    font-size: 18px;
+}
+h5 {
     font-size: 15px;
+}
+.over {
+    width: 250px;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.over1 {
+    width: 550px;
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+ul { 
+    list-style-type: none; 
+}
+li {
+    margin-top: -20px;
+    line-height: 1em;
 }
 input[type="text"] {
     font-family:courier;
@@ -54,7 +75,7 @@ input[type="text"]::placeholder {
     background-color: white;
 }
 .copy {
-    padding-top: 300px;
+    padding-top: 320px;
     text-align: center;
 }
 .icon {
@@ -63,7 +84,7 @@ input[type="text"]::placeholder {
     position: absolute;
     cursor: pointer;
     right: 455px;
-    top: 140px;
+    top: 155px;
     border-radius: 15px;
     font-size: 15px;
     color: #000;
@@ -73,7 +94,15 @@ input[type="text"]::placeholder {
     background-color: #F0E68C;
 }
 .y_image {
-    margin-left: 150px;
+    margin-top: -26px;
+    margin-left: 50px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    border: 2px solid #FEDE00;
+}
+.y_image1 {
+    margin-top: -25px;
     width: 250px;
     height: 200px;
     position: relative;
@@ -90,4 +119,11 @@ input[type="text"]::placeholder {
     float: left;
     text-align: left;
     width: 750px;
+}
+.recom {
+    width: 330px;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
 }
