@@ -99,15 +99,17 @@ input[type="text"]::placeholder {
     margin-left: 50px;
     width: 400px;
     height: 300px;
+    border-radius: 20px;
     position: relative;
-    border: 2px solid #FEDE00;
+    border: 2px solid #0004fe;
 }
 .y_image1 {
     margin-top: -25px;
+    border-radius: 20px;
     width: 250px;
     height: 200px;
     position: relative;
-    border: 2px solid #FEDE00;
+    border: 2px solid #3700fe;
 }
 .img {
     width: 450px;
@@ -127,4 +129,16 @@ input[type="text"]::placeholder {
     text-align: left;
     font-size: 20px;
     margin-top: 25px;
+}
+.about_page {
+    text-align: center;
+}
+.link1 {
+    width: 150px;
+    float: left;
+    margin-left: 50px;
+}
+.link2 {
+
+    float: left;
 }
